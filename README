@@ -1,5 +1,7 @@
 Installation:
-    git clone
+    git clone git@github.com:afrojuli/dotvim.git
 
 Symlink:
     ln -s ~/.vim/.vimrc ~/.vimrc
+
+but don't forget to add your ssh key first

@@ -1,0 +1,5 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =3
+let g:netrw_dirhist_1='/Users/Julian/programming/ex1.dSYM'
+let g:netrw_dirhist_2='/Users/Julian/Dropbox/Uni/4.WS14:15/Sysprak/Aufgabenblatt1'
+let g:netrw_dirhist_3='/Users/Julian/Alfred/alfred-terminalfinder'

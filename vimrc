@@ -4,6 +4,8 @@ syntax on
 filetype on
 set background=dark
 colo default
+" foldingmethod zu indent
+set fdm=indent
 set hlsearch
 set ai
 nnoremap <CR> :noh<CR><CR>

@@ -4,7 +4,6 @@ syntax on
 filetype on
 " kein automatischer Zeilenumbruch im wort
 set linebreak
-set background=dark
 colo default
 " foldingmethod zu indent
     " set fdm=indent

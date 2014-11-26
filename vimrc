@@ -4,24 +4,23 @@ syntax on
 filetype on
 " kein automatischer Zeilenumbruch im wort
 set linebreak
-colo default
 " foldingmethod zu indent
     " set fdm=indent
 set hlsearch
 set ai
 nnoremap <CR> :noh<CR><CR>
 " damit kann man einfach copy and paste verwenden
-
 set paste
 
 set ruler
-" size of a hard tabstop
+" stize of a hard tabstop
 " size of an indent
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
 set number
+"ueberall bewegen koennen
 set ve=all
 autocmd InsertEnter * set cul
 autocmd InsertLeave * set nocul
@@ -41,3 +40,12 @@ autocmd FileType make setlocal ts=8 sts=8 sw=8 noexpandtab
 
 " use ▶  to show tabs
 set listchars=tab:▶\ ,eol:¶ 
+
+" Show syntax highlighting groups for word under cursor
+nmap <C-S-P> :call <SID>SynStack()<CR>
+function! <SID>SynStack()
+  if !exists("*synstack")
+    return
+  endif
+  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
